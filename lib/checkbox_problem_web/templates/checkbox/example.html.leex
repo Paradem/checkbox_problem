@@ -10,6 +10,7 @@
   <%= inspect(@changeset)%>
   <%= text_input f, :id %>
   <br/>
+  <input type="hidden" id="<%= input_id(f, :not_blank)%>"/>
   <%= date_select f, :not_blank, year: [ prompt: "Hi"] %>
   <%= error_tag f, :not_blank %>
   <br/>
