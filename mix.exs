@@ -33,14 +33,8 @@ defmodule CheckboxProblem.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:phoenix, "~> 1.4.13",
-       [
-         env: :prod,
-         git: "https://github.com/phoenixframework/phoenix.git",
-         branch: "v1.4",
-         override: true
-       ]},
-      {:phoenix_pubsub, "~> 1.1", [env: :prod, repo: "hexpm", hex: "phoenix_pubsub"]},
+      {:phoenix, "~> 1.4.13", [override: true]},
+      {:phoenix_pubsub, "~> 1.1"},
       {:phoenix_ecto, "~> 4.0"},
       {:ecto_sql, "~> 3.1"},
       {:postgrex, ">= 0.0.0"},
